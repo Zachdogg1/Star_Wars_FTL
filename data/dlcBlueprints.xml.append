@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<shipBlueprint name="PLAYER_SHIP_ANAEROBIC" layout="Lucrehulk " img="Lucrehulk ">
+	<class id="text_PLAYER_SHIP_ANAEROBIC_class">Lucrehulk</class>
+	<name id="text_PLAYER_SHIP_ANAEROBIC_name">Lucrehulk Battleship</name>
+	<desc id="text_PLAYER_SHIP_ANAEROBIC_desc">A massive but dated droid battleship</desc>
+	<systemList>
+		<artillery power="1" room="13" start="true" weapon="ARTILLERY_FED" img="room_artillery" />
+		<artillery power="1" room="21" start="true" weapon="ARTILLERY_FED_C" img="room_artillery" />
+		<battery power="1" room="18" start="false" img="room_battery" />
+		<cloaking power="1" room="20" start="false" img="room_cloaking" />
+		<clonebay power="1" room="17" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="11" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="5" room="5" start="true" img="room_drones" />
+		<engines power="1" room="3" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="9" start="false" img="room_hacking_8" />
+		<medbay power="1" room="17" start="false" img="room_medbay">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="12" start="false" img="room_mind" />
+		<oxygen power="1" room="8" start="false" img="room_oxygen" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="16" start="true" img="room_sensors_3">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="4" room="1" start="true" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="19" start="false" />
+		<weapons power="2" room="4" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="5" count="2">
+		<weapon name="BEAM_HULL" />
+	</weaponList>
+	<droneList drones="25" count="4">
+		<drone name="BATTLE" />
+		<drone name="COMBAT_ION" />
+	</droneList>
+	<health amount="30" />
+	<maxPower amount="12" />
+</shipBlueprint>
+
+
+<shipBlueprint name="PLAYER_SHIP_ANAEROBIC_2" layout="Vulture" img="Vulture">
+	<class id="text_PLAYER_SHIP_ANAEROBIC_2_class">Vulture</class>
+	<name id="text_PLAYER_SHIP_ANAEROBIC_2_name">Vulture Droid</name>
+	<desc id="text_PLAYER_SHIP_ANAEROBIC_2_desc">This fully automated fighter has no need of doors, since its a solid machine and not a ship. leaves room for useful stuff</desc>
+	<systemList>
+		<artillery power="2" room="5" start="true" weapon="ION_4" img="room_artillery" />
+		<battery power="1" room="12" start="false" img="room_battery" />
+		<cloaking power="1" room="4" start="false" img="room_cloaking" />
+		<clonebay power="1" room="3" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="7" start="false" img="room_doors_4">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" room="2" start="false" img="room_drones" />
+		<engines power="3" room="20" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="18" start="true" img="room_hacking" />
+		<medbay power="1" room="3" start="false" img="room_medbay">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="14" start="true" img="room_mind" />
+		<oxygen power="1" room="21" start="false" img="room_oxygen" />
+		<pilot power="2" room="0" start="true" img="room_pilot_2">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="6" start="true" img="room_sensors_6">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="1" start="true" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<weapons power="2" room="8" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="10" count="4">
+		<weapon name="LASER_HEAVY_1" />
+		<weapon name="LASER_HEAVY_1" />
+	</weaponList>
+	<droneList drones="10" count="2" />
+	<health amount="30" />
+	<maxPower amount="9" />
+	<aug name="SLUG_GEL" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_ENERGY_3" layout="transport" img="transport">
+	<class id="text_PLAYER_SHIP_ENERGY_3_class">Transport</class>
+	<name id="text_PLAYER_SHIP_ENERGY_3_name">Rebel Transport</name>
+	<desc id="text_PLAYER_SHIP_ENERGY_3_desc">More rebels died on these ships then any other. A truly hellish journey awaits you if you try to win on this ship. good luck</desc>
+	<systemList>
+		<battery power="1" room="3" start="false" img="room_battery" />
+		<cloaking power="1" room="9" start="false" img="room_cloaking" />
+		<clonebay power="1" room="5" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="14" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" room="12" start="false" img="room_drones" />
+		<engines power="4" room="16" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="6" start="false" img="room_hacking" />
+		<medbay power="1" room="5" start="true" img="room_medbay">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="2" start="false" img="room_mind" />
+		<oxygen power="1" room="13" start="true" img="room_oxygen" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="7" start="true" img="room_sensors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="4" room="8" start="true" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="15" start="false" />
+		<weapons power="2" room="1" start="false" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="30" count="3" />
+	<droneList drones="30" count="3" />
+	<health amount="30" />
+	<maxPower amount="8" />
+	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="engi" />
+	<crewCount amount="1" class="human" />
+	<aug name="ADV_SCANNERS" />
+	<aug name="WEAPON_PREIGNITE" />
+	<aug name="SCRAP_COLLECTOR" />
+</shipBlueprint>
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<shipBlueprint name="PLAYER_SHIP_ENERGY_3" layout="transport" img="transport">
+	<class id="text_PLAYER_SHIP_ENERGY_3_class">Transport</class>
+	<name id="text_PLAYER_SHIP_ENERGY_3_name">Rebel Transport</name>
+	<desc id="text_PLAYER_SHIP_ENERGY_3_desc">More rebels died on these ships then any other. A truly hellish journey awaits you if you try to win on this ship. good luck</desc>
+	<systemList>
+		<battery power="1" room="3" start="false" img="room_battery" />
+		<cloaking power="1" room="9" start="false" img="room_cloaking" />
+		<clonebay power="1" room="5" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="14" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" room="12" start="false" img="room_drones" />
+		<engines power="4" room="16" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="6" start="false" img="room_hacking" />
+		<medbay power="1" room="5" start="true" img="room_medbay">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="2" start="false" img="room_mind" />
+		<oxygen power="1" room="13" start="true" img="room_oxygen" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="7" start="true" img="room_sensors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="4" room="8" start="true" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="15" start="false" />
+		<weapons power="2" room="1" start="false" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="30" count="3" />
+	<droneList drones="30" count="3" />
+	<health amount="30" />
+	<maxPower amount="8" />
+	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="engi" />
+	<crewCount amount="1" class="human" />
+	<aug name="ADV_SCANNERS" />
+	<aug name="WEAPON_PREIGNITE" />
+	<aug name="SCRAP_COLLECTOR" />
+</shipBlueprint>
+
